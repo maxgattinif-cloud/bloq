@@ -1,0 +1,17 @@
+# BLOQ 1.3 — como visualizar no Windows
+
+## O que você precisa fazer
+
+1. Baixe e extraia o arquivo ZIP para uma pasta do computador.
+2. Se ainda não tiver Node.js instalado, instale a versão **LTS** em https://nodejs.org/.
+3. Dentro da pasta extraída, dê dois cliques em **ABRIR-BLOQ.bat**.
+4. Na primeira execução, o inicializador baixa as dependências do projeto. É necessário estar conectado à internet.
+5. O navegador abrirá o endereço http://localhost:5173 com o jogo.
+6. Para fechar, feche a janela preta do inicializador.
+
+## Importante
+
+- Não abra `index.html` diretamente: este projeto React/Vite precisa ser iniciado pelo arquivo `ABRIR-BLOQ.bat`.
+- O inicializador não envia o jogo para a internet nem publica nada; ele apenas inicia uma cópia local no seu computador.
+- Esta é uma versão de desenvolvimento para visualização, com a correção da movimentação simultânea dos bloqueadores. Ainda não é a versão final submetida à CrazyGames.
+- A integração com o SDK da CrazyGames e os testes finais de publicação ainda não foram concluídos.
