@@ -47,9 +47,26 @@ export function ChessPieceArt({ type, color }: { type: ArtType; color: Color }) 
       case 'knight':
         return (
           <>
-            <path d="M32 80 C36 70 40 61 40 50 C36 46 34 40 34 34 C34 28 36 24 38 22 C40 14 46 9 52 6 L55 1 L60 9 C66 14 69 22 68 33 L66 45 C68 56 69 67 69 80 Z" {...shared} />
-            <circle cx="49" cy="23" r="2.4" fill={detail} />
-            <path d="M36 30 C42 27 47 28 52 33" fill="none" stroke={detail} strokeWidth="1" opacity=".5" />
+            {/* Side-profile horse head: muzzle, upright ear and flowing mane make
+                the knight unmistakable at the small size of a board square. */}
+            <path d="M34 82 C36 72 39 64 45 57 C40 53 37 47 38 40
+              C39 29 47 21 58 20 L62 12 L68 23
+              C75 26 79 32 79 40 C79 44 77 47 73 49
+              L84 53 L82 61 L72 64 L65 61
+              C63 68 66 76 72 82 Z" {...shared} />
+            <path d="M42 34 C38 27 40 18 47 10 L51 24
+              C56 19 62 18 67 22 L62 29
+              C55 27 49 29 42 34 Z" fill={detail} opacity=".9" />
+            <path d="M49 21 L46 6 L58 18" {...shared} />
+            <path d="M59 34 C62 31 66 31 69 34" fill="none"
+              stroke={detail} strokeWidth="2.1" strokeLinecap="round" />
+            <circle cx="65" cy="35" r="2.2" fill={detail} />
+            <path d="M77 53 L79 55" stroke={detail} strokeWidth="2"
+              strokeLinecap="round" />
+            <path d="M49 45 C51 51 57 54 63 55" fill="none"
+              stroke={highlight} strokeWidth="1.7" strokeLinecap="round" opacity=".85" />
+            <path d="M43 63 C42 70 40 76 37 81" fill="none"
+              stroke={detail} strokeWidth="2.4" strokeLinecap="round" opacity=".75" />
           </>
         );
       case 'rook':
